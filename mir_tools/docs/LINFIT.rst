@@ -1,9 +1,9 @@
 .. _LINFIT:
 
-LINFIT
+MIR Tools
 =====================
 
 LINFIT
 
-.. automodule:: mirspec
+.. automodule:: linfit
    :members:

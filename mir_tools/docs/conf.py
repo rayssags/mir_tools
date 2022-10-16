@@ -12,18 +12,18 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('../linfit'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'LINFIT'
-copyright = '2022, Ray'
-author = 'Ray'
+project = 'MIR Tools'
+copyright = '2022, Rayssa Guimarães Silva'
+author = 'Rayssa Guimarães Silva'
 root_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
-release = 'Today'
+release = '1.0.0'
 
 
 # -- General configuration ---------------------------------------------------

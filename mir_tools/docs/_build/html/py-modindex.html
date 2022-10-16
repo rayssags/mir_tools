@@ -2,11 +2,10 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Welcome to LINFIT’s documentation!" href="index.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.09.29"/>
-        <title>LINFIT - LINFIT Today documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.09.29"/><title>Python Module Index - MIR Tools 1.0.0 documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -122,7 +121,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">LINFIT Today documentation</div></a>
+      <a href="index.html"><div class="brand">MIR Tools 1.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -145,7 +144,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">LINFIT Today documentation</span>
+  <span class="sidebar-brand-text">MIR Tools 1.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
@@ -154,8 +153,8 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">LINFIT</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="LINFIT.html">MIR Tools</a></li>
 </ul>
 
 </div>
@@ -175,8 +174,7 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          
-<div class="theme-toggle-container theme-toggle-content">
+          <div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -190,66 +188,25 @@
           </label>
         </div>
         <article role="main">
-          <div class="section" id="linfit">
-<span id="id1"></span><h1>LINFIT<a class="headerlink" href="#linfit" title="Permalink to this headline">#</a></h1>
-<p>LINFIT</p>
-<span class="target" id="module-mirspec"></span><dl class="py class">
-<dt class="sig sig-object py" id="mirspec.mirspec">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mirspec.</span></span><span class="sig-name descname"><span class="pre">mirspec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wavelength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flux_error</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mirspec.mirspec" title="Permalink to this definition">#</a></dt>
-<dd><p>Create a new mid-infrared spectrum object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>wavelength</strong> – Wavelength in microns  or specified unit</p></li>
-<li><p><strong>flux</strong> – Flux in Jansky or specified unit</p></li>
-<li><p><strong>flux_error</strong> – Flux error in Jansky  or specified unit</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>Instance variable</p>
-</dd>
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>spectrum</strong> variable with wavelength in microns and flux and flux error in Jansky.</p>
-</dd>
-</dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="mirspec.mirspec.linfit">
-<span class="sig-name descname"><span class="pre">linfit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_interations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mirspec.mirspec.linfit" title="Permalink to this definition">#</a></dt>
-<dd><p>Executes the fit of the equation
-<span class="math notranslate nohighlight">\(\log F_\nu = \text{slope}\times\log\nu + \text{intercept}\)</span>
-by clipping the emission and absorption features where
-<span class="math notranslate nohighlight">\(\text{residual} &gt; \sigma\times\text{standard deviation}_\text{residual}\)</span></p>
-<p><strong>How to use:</strong></p>
-<p>Initiate a spectrum object</p>
-<p><code class="docutils literal notranslate"><span class="pre">spec</span> <span class="pre">=</span> <span class="pre">mirspec(wavelength,</span> <span class="pre">flux,</span> <span class="pre">flux_error)</span></code></p>
-<p>run the method</p>
-<p><code class="docutils literal notranslate"><span class="pre">spec.linfit()</span></code></p>
-<p>and call any of the resulting instance variables</p>
-<p><code class="docutils literal notranslate"><span class="pre">spec.ten_flux</span></code></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>sigma</strong> – Multiplicative number that determines how many standard deviation of the
-residuals are needed to remove a data point before the next iteration</p></li>
-<li><p><strong>l_min</strong> – Minimum wavelength to use</p></li>
-<li><p><strong>l_max</strong> – Maximum wavelength to use</p></li>
-<li><p><strong>max_interations</strong> – Maximum number of times to iterate the fit</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>Instance variables</p>
-</dd>
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Results of the fit <strong>slope</strong>, <strong>intercept</strong>, the absorption corrected 10.5 microns
-flux (<strong>ten_flux</strong>) and the arrays containing the data of each iteration for
-<strong>frequencies</strong>, <strong>fluxes</strong>, <strong>slopes</strong>, <strong>intercepts</strong>, <strong>residuals</strong>, <strong>residual_stds</strong>.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-</div>
+          
+<section class="domainindex-section">
+  <h1>Python Module Index</h1>
+  <div class="domainindex-jumpbox"><a href="#cap-l"><strong>l</strong></a></div>
+</section>
+<table class="domainindex-table">
+  <tr class="pcap">
+    <td></td><td>&#160;</td><td></td>
+  </tr>
+  <tr class="cap" id="cap-l">
+    <td></td><td><strong>l</strong></td><td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+        <a href="LINFIT.html#module-linfit"><code class="xref">linfit</code></a></td><td>
+    <em></em></td>
+  </tr>
+</table>
 
         </article>
       </div>
@@ -257,22 +214,12 @@ flux (<strong>ten_flux</strong>) and the arrays containing the data of each iter
         
         <div class="related-pages">
           
-          <a class="prev-page" href="index.html">
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">Home</div>
-                
-              </div>
-            </a>
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2022, Ray
+                Copyright &#169; 2022, Rayssa Guimarães Silva
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -299,6 +246,6 @@ flux (<strong>ten_flux</strong>) and the arrays containing the data of each iter
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/scripts/furo.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    </body>
+    
+    <script>DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true</script></body>
 </html>

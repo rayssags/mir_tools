@@ -1,4 +1,5 @@
 astropy>=4
+furo
 matplotlib
 numpy
 scipy
