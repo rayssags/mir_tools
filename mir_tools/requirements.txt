@@ -1,0 +1,6 @@
+astropy>=4
+numpy
+scipy
+matplotlib
+sphinx
+furo
