@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+linfit/__init__.py
+linfit/linfit.py
+linfit.egg-info/PKG-INFO
+linfit.egg-info/SOURCES.txt
+linfit.egg-info/dependency_links.txt
+linfit.egg-info/requires.txt
+linfit.egg-info/top_level.txt
