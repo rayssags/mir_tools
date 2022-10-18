@@ -10,4 +10,10 @@ User Documentation
    :maxdepth: 2
 
    LINFIT <LINFIT.rst>
-   Installation <inst.rst>
+   
+Installation
+===================================
+.. toctree::
+   :maxdepth: 2
+
+   Installation <instal.rst>
