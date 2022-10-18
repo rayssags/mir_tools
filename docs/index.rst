@@ -8,15 +8,12 @@ User Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    LINFIT <LINFIT.rst>
    
 Installation
 ===================================
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   Using pip <instal.rst>
+   Installation <inst.rst>
