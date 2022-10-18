@@ -19,4 +19,4 @@ Installation
    :maxdepth: 2
    :caption: Contents:
 
-   Using pip <inst.rst>
+   Using pip <instal.rst>
