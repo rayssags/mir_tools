@@ -1,5 +1,0 @@
-astropy>=4
-matplotlib
-numpy
-scipy
-sphinx
